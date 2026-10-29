@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f5eafa"><title>Nuestro pequeño universo 💜</title>
+<style>
+:root{--p:#512d78;--a:#8758ac;--ink:#563b63;--pink:#a064a0}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:Georgia,"Times New Roman",serif;color:var(--ink);background:linear-gradient(155deg,#fff5fb,#f4eafa 48%,#e6d8f3);overflow-x:hidden}
+body:before,body:after{content:"";position:fixed;border-radius:50%;background:#f8e9fa;opacity:.7;z-index:-1}
+body:before{width:220px;height:220px;left:-75px;top:12%}body:after{width:260px;height:260px;right:-90px;bottom:8%}
+main{width:min(900px,94vw);margin:auto;padding:26px 0 32px;text-align:center;position:relative}
+.eyebrow{font-size:.78rem;letter-spacing:.16em;font-weight:bold;color:#9872b2;margin:8px 0}
+h1{font-size:clamp(2rem,5vw,2.7rem);color:var(--p);margin:10px 0}.subtitle{font-style:italic;color:#946b9b;margin:0 auto 24px;line-height:1.6}
+.card{background:#fffafd;border:2px solid #e7cde9;border-radius:22px;box-shadow:0 12px 28px #8b62a31a;padding:24px clamp(16px,4vw,40px);min-height:210px;display:flex;flex-direction:column;justify-content:center;align-items:center;position:relative}
+.card:after{content:"";position:absolute;inset:7px;border:1px solid #f2e3f3;border-radius:15px;pointer-events:none}
+.card-label{font-size:.85rem;font-weight:bold;letter-spacing:.08em;color:#a36caa;margin-bottom:20px}.message{font-size:clamp(1.1rem,2.8vw,1.45rem);line-height:1.65;white-space:pre-line;margin:0;max-width:680px;z-index:1}
+.secondary{font-style:italic;color:var(--pink);line-height:1.6;margin:18px 0 0;z-index:1}
+button{margin:20px auto 0;border:0;border-radius:999px;background:var(--a);color:white;font:bold 1rem Georgia,serif;padding:14px 24px;cursor:pointer;box-shadow:0 6px 16px #8758ac35;transition:transform .2s,background .2s}
+button:hover{background:#70458e;transform:translateY(-2px)}button:focus-visible{outline:3px solid #c7a1e1;outline-offset:3px}.hint{font-size:.86rem;color:#9b7da7;margin-top:12px}
+#surprise{display:none;animation:fadeIn .9s ease both}.final-card{margin-top:4px}.final-title{font-size:clamp(1.2rem,3vw,1.55rem);font-weight:bold;color:#70458e;margin:0 0 16px}
+.final-copy{font-size:1.05rem;line-height:1.7;margin:0}.final-note{font-style:italic;color:var(--pink);font-size:.95rem;margin:18px 0 0}
+.bouquet{width:min(440px,90vw);height:auto;display:block;margin:12px auto -2px;overflow:visible}.dedication{font-size:clamp(1.1rem,3vw,1.3rem);font-style:italic;color:#70458e;margin:2px 0 8px}.signature{font-size:.9rem;color:#9875a8;margin:0}
+.heart{position:fixed;bottom:-35px;pointer-events:none;animation:floatUp 2.8s ease-out forwards;z-index:5}
+@keyframes floatUp{0%{transform:translateY(0) rotate(0);opacity:0}15%{opacity:.9}100%{transform:translateY(-70vh) rotate(25deg);opacity:0}}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+footer{margin-top:26px;color:#a18bad;font-size:.8rem}@media(max-width:520px){main{padding-top:20px}.card{min-height:235px;padding:22px 18px}.subtitle{max-width:340px}.final-copy{font-size:1rem}}
+</style></head>
+<body><main>
+<p class="eyebrow">PARA MI PERSONA FAVORITA</p><h1>Nuestro pequeño universo 💜</h1>
+<p class="subtitle">Aunque nos separen kilómetros, mi corazón siempre te encuentra.</p>
+<section class="card" id="letter" aria-live="polite"><div class="card-label">♡ &nbsp; UNA CARTA PARA TI &nbsp; ♡</div><p class="message" id="message"></p><p class="secondary" id="secondary"></p></section>
+<button id="next" type="button">Leer mi primer mensajito ♡</button><p class="hint" id="hint">Un mensajito a la vez, hecho especialmente para ti.</p>
+<section id="surprise" aria-live="polite"><div class="card final-card">
+<h2 class="final-title">UNA SORPRESA PARA TI, CAYLA 💜</h2>
+<p class="final-copy">No puedo darte este ramo en persona todavía,<br>pero quería regalarte algo que te recordara<br>que incluso desde lejos pienso en ti.</p>
+<p class="final-note">Ojalá pronto pueda entregarte flores y abrazarte de verdad. ♡</p></div>
+<svg class="bouquet" viewBox="0 0 440 350" role="img" aria-label="Ramo de siete tulipanes morados envueltos en papel lila">
+<defs><linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e7d0f0"/><stop offset="1" stop-color="#c49bdc"/></linearGradient></defs>
+<g fill="none" stroke="#477950" stroke-width="5" stroke-linecap="round"><path d="M104 85 Q150 200 220 294"/><path d="M145 65 Q180 190 220 294"/><path d="M196 48 Q208 175 220 294"/><path d="M244 62 Q230 190 220 294"/><path d="M293 88 Q260 200 220 294"/><path d="M123 119 Q170 210 220 294"/><path d="M275 120 Q248 215 220 294"/></g>
+<g fill="#648f66" stroke="#477650" stroke-width="1.5"><path d="M155 205 Q95 180 100 132 Q150 151 155 205Z"/><path d="M176 235 Q210 180 251 183 Q227 225 176 235Z"/><path d="M204 260 Q155 226 160 194 Q199 218 204 260Z"/><path d="M244 225 Q280 178 311 188 Q286 221 244 225Z"/><path d="M228 276 Q270 242 292 250 Q267 276 228 276Z"/></g>
+<g stroke="#9866b5" stroke-width="1.5" stroke-linejoin="round">
+<g transform="translate(104 83) scale(.82)"><path fill="#b88ada" d="M-30 22 Q-43 -4 -24 -28 L-10 -12 L0 -43 L14 -12 Q31 -31 35 -2 L28 22 Q0 36 -30 22Z"/><path fill="none" stroke="#f8d9f3" stroke-width="3" d="M-10 -18 L-13 1"/></g>
+<g transform="translate(145 63) scale(.95)"><path fill="#9d70c9" d="M-30 22 Q-43 -4 -24 -28 L-10 -12 L0 -43 L14 -12 Q31 -31 35 -2 L28 22 Q0 36 -30 22Z"/></g>
+<g transform="translate(196 48) scale(1.02)"><path fill="#b58bdc" d="M-30 22 Q-43 -4 -24 -28 L-10 -12 L0 -43 L14 -12 Q31 -31 35 -2 L28 22 Q0 36 -30 22Z"/><path fill="none" stroke="#f8d9f3" stroke-width="3" d="M-10 -18 L-13 1"/></g>
+<g transform="translate(244 62) scale(.95)"><path fill="#8e63be" d="M-30 22 Q-43 -4 -24 -28 L-10 -12 L0 -43 L14 -12 Q31 -31 35 -2 L28 22 Q0 36 -30 22Z"/></g>
+<g transform="translate(293 87) scale(.82)"><path fill="#c19ae0" d="M-30 22 Q-43 -4 -24 -28 L-10 -12 L0 -43 L14 -12 Q31 -31 35 -2 L28 22 Q0 36 -30 22Z"/></g>
+<g transform="translate(123 119) scale(.72)"><path fill="#d2a9e7" d="M-30 22 Q-43 -4 -24 -28 L-10 -12 L0 -43 L14 -12 Q31 -31 35 -2 L28 22 Q0 36 -30 22Z"/></g>
+<g transform="translate(275 120) scale(.72)"><path fill="#aa83d2" d="M-30 22 Q-43 -4 -24 -28 L-10 -12 L0 -43 L14 -12 Q31 -31 35 -2 L28 22 Q0 36 -30 22Z"/></g></g>
+<path d="M65 154 L375 154 L322 275 L220 338 L118 275Z" fill="url(#paper)" stroke="#b78bcd" stroke-width="2"/><path d="M93 169 L347 169 L302 269 L220 320 L138 269Z" fill="#f4e4f8" stroke="#d2a8e1"/>
+<path d="M93 169 Q151 235 220 320 M347 169 Q287 235 220 320" fill="none" stroke="#d3a5df" stroke-width="2"/>
+<path d="M178 239 L220 253 L262 239 L250 269 L220 281 L190 269Z" fill="#a16ac1" stroke="#80509f"/><path d="M194 263 L161 294 L171 260Z M246 263 L279 294 L269 260Z" fill="#bd8bd7" stroke="#80509f"/><ellipse cx="220" cy="261" rx="12" ry="12" fill="#8c56ad" stroke="#71418d"/>
+</svg><p class="dedication">Para ti, incluso desde lejos. Siempre tú. ♡</p><p class="signature">Con todo mi cariño, Daniel</p></section>
+<footer>Hecho con cariño, para ti. ♡</footer></main>
+<script>
+const messages=[
+["Si pudiera elegir dónde estar ahora mismo,\nte elegiría a ti, sin pensarlo dos veces.","Mi lugar favorito no es un sitio: eres tú."],
+["A veces quisiera que los kilómetros desaparecieran\ny poder cambiar cada llamada por un abrazo tuyo.","Mientras llega ese día, te abrazo con cada palabra."],
+["Aunque no pueda tomar tu mano cuando te extraño,\nmi corazón sigue caminando a tu lado.","La distancia nos separa por fuera, no por dentro."],
+["Me enamora imaginar todos los momentos que\ntodavía nos esperan cuando podamos estar juntos.","Quiero llenar de recuerdos bonitos nuestra historia."],
+["Si hoy pudiera enviarte algo más que un mensaje,\nte enviaría un abrazo que durara hasta mañana.","Y otro más, para todos los días que te he extrañado."],
+["No quiero que seas solamente una parte bonita\nde mis días; quiero construir muchos días contigo.","Quiero seguir eligiéndote, incluso desde lejos."],
+["Estos tulipanes no pueden reemplazar mis abrazos,\npero llevan un poquito de todo lo que siento por ti.","Cada pétalo representa una razón para quererte."],
+["Hasta que pueda mirarte a los ojos y decirte esto,\nguarda estas palabras cerquita de tu corazón.","Te amo, Cayla. Me hace feliz tenerte en mi vida. 💜"]];
+let index=0;const message=document.getElementById("message"),secondary=document.getElementById("secondary"),next=document.getElementById("next"),hint=document.getElementById("hint");
+function hearts(count=3){const symbols=["♡","♥","✦"],colors=["#c68edb","#e6a3ce","#a67bc8"];for(let i=0;i<count;i++){const el=document.createElement("span");el.className="heart";el.textContent=symbols[Math.floor(Math.random()*symbols.length)];el.style.left=(10+Math.random()*80)+"vw";el.style.color=colors[Math.floor(Math.random()*colors.length)];el.style.fontSize=(15+Math.random()*15)+"px";el.style.animationDuration=(2.1+Math.random()*1.3)+"s";document.body.appendChild(el);el.addEventListener("animationend",()=>el.remove())}}
+function showMessage(){const [primary,note]=messages[index];message.textContent=primary;secondary.textContent=note;hearts(3);if(index<messages.length-1){index++;next.textContent="Leer otro mensajito ♡"}else{next.textContent="Descubrir tu sorpresa 💐";next.onclick=reveal}}
+function reveal(){document.getElementById("letter").style.display="none";next.style.display="none";hint.style.display="none";document.getElementById("surprise").style.display="block";hearts(16);window.scrollTo({top:0,behavior:"smooth"})}
+next.addEventListener("click",showMessage);showMessage();
+</script></body></html>
